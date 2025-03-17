@@ -424,6 +424,14 @@
     "game": "We Become What We Behold"
   },
   {
+    "gameroot": "Bladeball/",
+    "game": "Blade ball"
+  },
+  {
+    "gameroot": "Buildnowgg/",
+    "game": "Build now GG"
+  },
+  {
     "gameroot": "Slowroads/",
     "game": "Slow roads"
   }
