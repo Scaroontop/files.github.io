@@ -444,6 +444,10 @@
     "game": "OvO Modded (Might be blocked)"
   },
   {
+    "gameroot": "csgo/",
+    "game": "CSGO Bhop"
+  },
+  {
     "gameroot": "Slowroads/",
     "game": "Slow roads"
   }
