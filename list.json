@@ -448,6 +448,14 @@
     "game": "CSGO Bhop"
   },
   {
+    "gameroot": "Snowrider3d/",
+    "game": "Snow rider 3d"
+  },
+  {
+    "gameroot": "SpoobProxy/",
+    "game": "Spoob Proxy"
+  },
+  {
     "gameroot": "Slowroads/",
     "game": "Slow roads"
   }
