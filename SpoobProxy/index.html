@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoob Browser</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    #urlInput {
+      padding: 10px;
+      width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      outline: none;
+    }
+    button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    iframe {
+      width: 90%;
+      height: 70vh;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Spoob Browser</h1>
+  <div>
+    <input type="text" id="urlInput" placeholder="Enter URL...">
+    <button onclick="goToPage()">Go</button>
+  </div>
+  <iframe id="spoobFrame"></iframe>
+
+  <script>
+    function goToPage() {
+      const url = document.getElementById('urlInput').value;
+      if (url) {
+        let formattedUrl = url.startsWith('http://') || url.startsWith('https://') ? url : `https://${url}`;
+        document.getElementById('spoobFrame').src = `https://api.allorigins.win/raw?url=${encodeURIComponent(formattedUrl)}`;
+      }
+    }
+  </script>
+</body>
+</html>
