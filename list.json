@@ -456,6 +456,10 @@
     "game": "Spoob Proxy"
   },
   {
+    "gameroot": "Soundboard/",
+    "game": "Soundboard"
+  },
+  {
     "gameroot": "Slowroads/",
     "game": "Slow roads"
   }
